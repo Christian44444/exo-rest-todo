@@ -1,0 +1,24 @@
+.todos {
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px black;
+  }
+  
+  .todo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid black;
+    margin: 5px;
+  }
+  
+  .todo:last-of-type {
+    border: none;
+  }
+
+  .todo .done {
+    text-decoration: line-through;
+    color: #888;
+  }

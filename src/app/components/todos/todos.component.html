@@ -1,0 +1,28 @@
+<h1>Ma liste de tâches</h1>
+<div class="todos">
+    <div class="todo">
+        <form #formAjoutTodo="ngForm" (ngSubmit)="createTodo(formAjoutTodo)">
+            <input  
+                required         
+                [(ngModel)]="newtodo.text"
+                name="text"
+                type="text"
+                placeholder="Votre todo">
+                <button type="submit">Ajouter</button>        
+        </form>
+    </div>
+    <div class="todo">
+    </div>
+    <div class="todo" *ngFor="let todo of todos$ | async">
+        <h3 *ngIf="!todo.isEditable" [class.done]="todo.done">{{ todo.text }}</h3>
+        <input *ngIf="todo.isEditable" type="text" [(ngModel)]="todo.text">
+        <!-- <h3 *ngIf="!textEditable" [class.done]="todo.done" contentEditable="true">{{ todo.text }}</h3> -->
+        <div class="buttons">
+            <!-- *ngIf="!todo.done" ✔︎ ✖︎ --> 
+            <button class="bt-maj" (click)="maj(todo)">{{ todo.isEditable? '✔︎' : '✎' }}</button> 
+            <button class="bt-check" (click)="updateTodo(todo)">{{ todo.done? '✖︎' : '✔︎' }}</button>
+            <!-- (click)="todo.done = !todo.done">{{ todo.done? '✖︎' : '✔︎' }}</button>  -->       
+            <button class="bt-close" (click)="deleteTodo(todo)" >Supprimer</button>
+        </div>
+    </div>
+</div>

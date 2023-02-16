@@ -1,0 +1,45 @@
+{
+  "todos": [
+    {
+      "id": "078153e8-cf49-4855-888d-acb505f60279",
+      "text": "Faire les courses",
+      "done": false,
+      "isEditable": false
+    },
+    {
+      "id": "7b53cdfe-03cb-469a-af16-3af782639606",
+      "text": "Récupérer les enfants à l'école",
+      "done": true,
+      "isEditable": false
+    },
+    {
+      "id": "MjeAd9G",
+      "text": "Nourrir ces foutus gamins",
+      "done": false,
+      "isEditable": false
+    },
+    {
+      "id": "5e6e8e75-9d3d-4876-81c1-2d72f0620483",
+      "text": "comprendre javascript",
+      "done": false,
+      "isEditable": false
+    },
+    {
+      "id": "1d1a2d66-41e8-4563-beb7-f2ac5f9c4740",
+      "text": "Apprendre Angular",
+      "done": false
+    },
+    {
+      "id": "0b33d391-b41e-4124-93e5-5f851a151d23",
+      "text": "titi",
+      "done": false,
+      "isEditable": true
+    },
+    {
+      "text": "tuut",
+      "id": "GxXKtmJ",
+      "done": false,
+      "isEditable": false
+    }
+  ]
+}
